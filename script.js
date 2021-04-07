@@ -1,3 +1,8 @@
+const imageContainer = document.getElementById('image-container')
+const loader = document.getElementById('loader')
+
+let photosArray = []
+
 //API
 const count = 10
 const apiKey = 'mp4gN_gTGNPr9n8Lty4Tm9RXyug0lsC66Kbm1-X-9eo'
