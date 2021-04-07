@@ -16,6 +16,14 @@ function displayPhotos() {
         const item = document.createElement('a')
         item.setAttribute('href', photo.links.html)
         item.setAttribute('target', '_blank')
+        //create img for photo
+        const img = document.createElement('img')
+        img.setAttribute('src', photo.urls.regular)
+        img.setAttribute('alt', photo.alt_description)
+        img.setAttribute('title', photo.alt_description)
+        //put img inside anchor, then put both inside imageContainer
+        item.appendChild(img)
+        imageContainer.appendChild(item)
     })
 }
 
